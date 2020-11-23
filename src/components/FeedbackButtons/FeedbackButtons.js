@@ -3,9 +3,13 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Button = styled.button`
+    width: 100px;
     margin-left: 10px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
     &:hover{
-        background-color: blue;
+        background-color: #99ffff;
     }
 `;
 
