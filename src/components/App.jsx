@@ -10,8 +10,8 @@ class App extends React.Component {
       bad: 0
     };
   changeStatistics = button => {
-    this.setState(prev => {
-      return { [button]: prev[button] + 1 };
+    this.setState(prevState => {
+      return { [button]: prevState[button] + 1 };
     });
   };
   countTotalFeedback() {
@@ -19,7 +19,7 @@ class App extends React.Component {
       return good + neutral + bad;
   }
   countPositiveFeedbackPercentage() {
-      return (+((this.state.good*100)/this.countTotalFeedback()).toFixed(2));
+      return ((+(this.state.good*100)/this.countTotalFeedback()).toFixed(0));
   }
   render() {
     const { good, neutral, bad } = this.state;

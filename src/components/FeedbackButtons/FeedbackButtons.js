@@ -20,7 +20,7 @@ const FeedbackButtons = ({ options, onLeaveFeedback }) => {
     <>
       {keys.map(key => (
         <Button key={key} onClick={() => onLeaveFeedback(key)}>
-          {key.charAt(0).toUpperCase() + key.slice(1)}
+          {key[0].toUpperCase()+key.slice(1)}
         </Button>
       ))}
     </>
