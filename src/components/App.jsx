@@ -15,8 +15,7 @@ class App extends React.Component {
     });
   };
   countTotalFeedback() {
-      const { good, neutral, bad } = this.state;
-      return good + neutral + bad;
+    return Object.values(this.state).reduce((first, next) => first + next);
   }
   countPositiveFeedbackPercentage() {
       return ((+(this.state.good*100)/this.countTotalFeedback()).toFixed(0));
