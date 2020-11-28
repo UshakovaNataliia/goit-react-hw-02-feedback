@@ -1,7 +1,7 @@
 import React from 'react';
-import Statistics from './Statistics/Statistics';
-import FeedbackButtons from './FeedbackButtons/FeedbackButtons';
-import Section from './Section/Section';
+import Statistics from './Statistics';
+import FeedbackButtons from './FeedbackButtons';
+import Section from './Section';
 
 class App extends React.Component {
   state = {
@@ -36,11 +36,7 @@ class App extends React.Component {
            neutral={neutral}
            bad={bad}
            total={this.countTotalFeedback()}
-           positivePercentage={
-             this.countPositiveFeedbackPercentage() > 0
-               ? this.countPositiveFeedbackPercentage()
-               : 0
-           }
+           positivePercentage={this.countPositiveFeedbackPercentage()}
          />
        </Section>
      </>
