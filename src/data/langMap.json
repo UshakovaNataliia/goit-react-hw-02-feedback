@@ -1,0 +1,27 @@
+{
+  "ru": {
+    "titles": {
+      "MAIN_TITLE": "Пожалуйста оставьте отзыв",
+      "SECOND_TITLE": "Статистика"
+    },
+    "buttons": {
+      "GOOD": "Хорошо",
+      "NORMAL": "Так-се",
+      "BAD": "Плохо"
+    },
+    "NO_FEEDBACK": "Пока никто не отозвался"
+  },
+
+  "en": {
+    "titles": {
+      "MAIN_TITLE": "Please leave feedback",
+      "SECOND_TITLE": "Statistics"
+    },
+    "buttons": {
+      "GOOD": "Good",
+      "NORMAL": "Normal",
+      "BAD": "Bad"
+    },
+    "NO_FEEDBACK": "No feedback given"
+  }
+}
